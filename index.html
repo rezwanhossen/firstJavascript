@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bapar bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-5 ">Fanctunal <span class="text-red-500 font-medium">Rz bank</span>!!</h1>
+    </header>
+    <main>
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                <div class="bg-green-600 p-5 rounded-lg">
+                    <h4 class="text-2xl font-medium">Deposit</h4>
+                    <h2 class="text-4xl font-medium">$<span id="deposit-total">00</span></h2>
+                </div>
+
+                <div class="bg-yellow-600 p-5 rounded-lg">
+                    <h4 class="text-2xl font-medium">Withdraw</h4>
+                    <h2 class="text-4xl font-medium">$<span id="withdrow-total">00</span></h2>
+                </div>
+
+                <div class="bg-blue-600 p-5 rounded-lg">
+                    <h4 class="text-2xl font-medium">Balance</h4>
+                    <h2 class="text-4xl font-medium">$<span id="balance-total">1200</span></h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+
+                <div class="bg-pink-600 p-5  rounded-lg">
+                    <h3 class="text-4xl mb-4 font-medium text-white">Your Deposit</h3>
+                    <input id="depo-amnt-input" class="w-3/4 rounded-md px-4 py-2 block" type="text"
+                        placeholder="$ Ammount you want to diopsit">
+                    <button id="deposit-btn"
+                        class="bg-green-700 rounded-lg px-5 py-2 font-medium mt-2 hover:bg-green-500">Deposit</button>
+
+                </div>
+
+                <div class="bg-red-600 p-5  rounded-lg">
+                    <h3 class="text-4xl mb-4 font-medium text-white">Your Withdrow</h3>
+                    <input id="withdrow-input" class="w-3/4 rounded-md px-4 py-2 block" type="text"
+                        placeholder="$ Ammount you want to withdrow">
+                    <button id="withdrow-btn"
+                        class="bg-blue-700 rounded-lg px-5 py-2 font-medium mt-2 hover:bg-blue-500">withdrow</button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index1.js"></script>
+
+
+
+</body>
+
+</html>
